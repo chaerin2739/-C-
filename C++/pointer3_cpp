@@ -1,0 +1,26 @@
+#include <iostream>
+
+using namespace std;
+//레퍼런스
+int main () {
+    int num0 =0;
+    int *num1 = &num0;
+    int &num2 =num0; //참조
+    
+    cout << num0 <<endl;
+    cout << *num1 << endl;
+    cout << num2 << endl;
+    cout << endl;
+    
+    *num1 =40;
+    cout << num0 <<endl;
+    cout << *num1 << endl;
+    cout << num2 << endl;
+    cout << endl;
+
+    int n =50;
+    num1 = &n;
+    cout << *num1 << endl;
+//=
+    int *const num3 = &num0;
+}
